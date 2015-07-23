@@ -16,3 +16,6 @@ brew bundle
 
 # Ruby
 rbenv install 2.2.2
+
+# Python
+pip install -r python/requirements.txt

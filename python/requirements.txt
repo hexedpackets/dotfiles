@@ -1,0 +1,6 @@
+gcalcli>=3.3
+ipython>=3.2
+awscli>=1.7
+flake8>=2.4
+ipdb>=0.8
+requests>=2.7
