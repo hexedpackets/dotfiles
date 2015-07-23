@@ -19,3 +19,5 @@ rbenv install 2.2.2
 
 # Python
 pip install -r python/requirements.txt
+# Force configuration of gcal
+gcalcli agenda
