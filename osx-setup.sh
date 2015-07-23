@@ -21,3 +21,6 @@ rbenv install 2.2.2
 pip install -r python/requirements.txt
 # Force configuration of gcal
 gcalcli agenda
+
+# Restore applications
+mackup restore

@@ -11,6 +11,8 @@ brew "ack"
 brew "cheat"
 brew "tmux"
 brew "gnupg"
+brew "bash-completion"
+brew "mackup"
 
 # Networking
 brew "curl"
