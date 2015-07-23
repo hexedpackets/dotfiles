@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo -v
+
 echo "What would you to name your computer?"
 read COMPUTER_NAME
 sudo scutil --set ComputerName $COMPUTER_NAME
@@ -61,9 +63,13 @@ fi
 
 # Update homebrew recipes
 brew update
+sudo -vn
 # Install brew bundle and run it
 brew tap Homebrew/bundle
 brew bundle
+
+# Enable accessiblity for shiftit
+sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "INSERT INTO access VALUES('kTCCServiceAccessibility','org.shiftitapp.ShiftIt',0,1,1,NULL);"
 
 # Ruby
 rbenv install 2.2.2
@@ -89,3 +95,6 @@ done
 boot2docker -m 3072 init
 boot2docker ssh -t 'echo "DOCKER_TLS=no" | sudo tee /var/lib/boot2docker/profile'
 boot2docker restart
+
+# Reset sudo time
+sudo -K
