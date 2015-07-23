@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-# Set a hostname
 echo "What would you to name your computer?"
 read COMPUTER_NAME
 sudo scutil --set ComputerName $COMPUTER_NAME
 sudo scutil --set HostName $COMPUTER_NAME
 sudo scutil --set LocalHostName $COMPUTER_NAME
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $COMPUTER_NAME
+
+echo "Using Google's DNS servers for Wi-Fi"
+sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
 
 echo "Hide timemachine and user system icons"
 # Get the system Hardware UUID and use it for the next menubar stuff
