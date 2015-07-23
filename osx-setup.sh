@@ -17,8 +17,6 @@ for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
     "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
     "/System/Library/CoreServices/Menu Extras/User.menu"
 done
-echo "Hide spotlight icon"
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 echo "Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 echo "Save to disk instead of icloud by default"
@@ -87,3 +85,7 @@ find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 for app in "Activity Monitor" "cfprefsd" "Dock" "Finder" "Safari" "SystemUIServer"; do
   killall "${app}" > /dev/null 2>&1
 done
+
+boot2docker -m 3072 init
+boot2docker ssh -t 'echo "DOCKER_TLS=no" | sudo tee /var/lib/boot2docker/profile'
+boot2docker restart
