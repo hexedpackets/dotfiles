@@ -68,8 +68,9 @@ sudo -vn
 brew tap Homebrew/bundle
 brew bundle
 
-# Enable accessiblity for shiftit
+# Enable accessiblity for shiftit and dropbox
 sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "INSERT INTO access VALUES('kTCCServiceAccessibility','org.shiftitapp.ShiftIt',0,1,1,NULL);"
+sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "INSERT INTO access VALUES('kTCCServiceAccessibility','com.getdropbox.dropbox',0,1,1,NULL);"
 
 # Ruby
 rbenv install 2.2.2
