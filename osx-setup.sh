@@ -54,6 +54,9 @@ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 echo "Disable local Time Machine backups"
 hash tmutil &> /dev/null && sudo tmutil disablelocal
 
+mkdir ~/repos
+mkdir ~/.vpn
+
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
@@ -77,11 +80,6 @@ rbenv install 2.2.2
 
 # Python
 pip install -r python/requirements.txt
-# Force configuration of gcal
-gcalcli agenda
-
-# Restore applications
-mackup restore
 
 echo "Disabling the backswipe in Chrome"
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
@@ -96,6 +94,3 @@ done
 boot2docker -m 3072 init
 boot2docker ssh -t 'echo "DOCKER_TLS=no" | sudo tee /var/lib/boot2docker/profile'
 boot2docker restart
-
-# Reset sudo time
-sudo -K
