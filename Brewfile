@@ -20,6 +20,7 @@ brew "git"
 brew "wget"
 brew "ngrok"
 brew "nmap"
+brew "wireshark", args: ["devel"]
 
 # Cask/Apps
 tap "caskroom/cask"
