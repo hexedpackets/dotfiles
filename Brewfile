@@ -44,6 +44,7 @@ brew "node"
 brew "python"
 brew "elixir"
 brew "rbenv"
+brew "ruby-build"
 brew "go"
 
 # Ops tools
