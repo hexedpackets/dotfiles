@@ -77,6 +77,11 @@ sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "INSERT INTO acc
 
 # Ruby
 rbenv install 2.2.2
+rbenv rehash
+gem install bundler
+rbenv rehash
+bundle install --gemfile=ruby/Gemfile
+rbenv rehash
 
 # Python
 pip install -r python/requirements.txt
