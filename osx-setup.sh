@@ -78,6 +78,8 @@ sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "INSERT INTO acc
 # Ruby
 rbenv install 2.2.2
 rbenv rehash
+eval "$(rbenv init -)"
+rbenv global 2.2.2
 gem install bundler
 rbenv rehash
 bundle install --gemfile=ruby/Gemfile

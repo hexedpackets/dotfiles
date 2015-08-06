@@ -36,6 +36,7 @@ cask "shiftit"
 cask "tunnelblick"
 cask "skype"
 cask "lastpass"
+cask "slack"
 tap "caskroom/fonts"
 
 # Programming
