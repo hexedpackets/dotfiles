@@ -10,6 +10,7 @@ brew "jq"
 brew "ack"
 brew "cheat"
 brew "tmux"
+brew "reattach-to-user-namespace"
 brew "gnupg"
 brew "bash-completion"
 brew "mackup"
@@ -37,7 +38,10 @@ cask "tunnelblick"
 cask "skype"
 cask "lastpass"
 cask "slack"
+
+# Fonts
 tap "caskroom/fonts"
+cask "font-inconsolata"
 
 # Programming
 brew "hub"
