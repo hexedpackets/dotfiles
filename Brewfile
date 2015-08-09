@@ -14,6 +14,7 @@ brew "reattach-to-user-namespace"
 brew "gnupg"
 brew "bash-completion"
 brew "mackup"
+brew "socat"
 
 # Networking
 brew "curl"
