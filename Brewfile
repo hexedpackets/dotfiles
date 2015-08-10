@@ -64,3 +64,4 @@ brew "docker-compose"
 
 # Security
 cask "little-snitch"
+brew "aircrack-ng"

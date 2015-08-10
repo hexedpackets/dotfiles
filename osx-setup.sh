@@ -103,3 +103,5 @@ git clone https://github.com/monokal/Shellshock ~/repos/Shellshock
 boot2docker -m 3072 init && boot2docker up
 boot2docker ssh -t 'echo "DOCKER_TLS=no" | sudo tee /var/lib/boot2docker/profile'
 boot2docker restart
+
+airodump-ng-oui-update
