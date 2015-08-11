@@ -88,6 +88,12 @@ rbenv rehash
 # Python
 pip install -r python/requirements.txt
 
+# OCaml
+opam install -y utop
+
+# Elixir
+mix do local.hex --force, local.rebar --force
+
 echo "Disabling the backswipe in Chrome"
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
