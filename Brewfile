@@ -15,6 +15,7 @@ brew "gnupg"
 brew "bash-completion"
 brew "mackup"
 brew "socat"
+brew "htop"
 
 # Networking
 brew "curl"
