@@ -54,6 +54,8 @@ brew "elixir"
 brew "rbenv"
 brew "ruby-build"
 brew "go"
+brew "ocaml"
+brew "opam"
 
 # Ops tools
 brew "packer"
