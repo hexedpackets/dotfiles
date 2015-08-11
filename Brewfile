@@ -39,6 +39,7 @@ cask "tunnelblick"
 cask "skype"
 cask "lastpass"
 cask "slack"
+cask "vlc"
 
 # Fonts
 tap "caskroom/fonts"
