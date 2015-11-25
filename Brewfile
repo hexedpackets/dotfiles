@@ -64,7 +64,6 @@ brew "ansible"
 brew "terraform"
 cask "virtualbox"
 brew "boot2docker"
-brew "docker-compose"
 
 # Security
 cask "little-snitch"
