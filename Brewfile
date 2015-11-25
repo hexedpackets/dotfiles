@@ -38,8 +38,8 @@ cask "shiftit"
 cask "tunnelblick"
 cask "skype"
 cask "lastpass"
-cask "slack"
 cask "vlc"
+cask "emacs"
 
 # Fonts
 tap "caskroom/fonts"
