@@ -7,3 +7,5 @@ mackup restore
 
 # Force configuration of gcal
 gcalcli agenda
+
+npm install -g diff-so-fancy
