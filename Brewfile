@@ -21,7 +21,7 @@ brew "htop"
 brew "curl"
 brew "git"
 brew "wget"
-brew "ngrok"
+brew "homebrew/binary/ngrok2"
 brew "nmap"
 brew "wireshark", args: ["devel"]
 
