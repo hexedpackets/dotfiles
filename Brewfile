@@ -42,6 +42,7 @@ cask "emacs"
 cask "firefox"
 cask "flash"
 flash "unity-web-player"
+brew "w3m"
 
 # Fonts
 tap "caskroom/fonts"
@@ -56,15 +57,12 @@ brew "elixir"
 brew "rbenv"
 brew "ruby-build"
 brew "go"
-brew "ocaml"
-brew "opam"
 
 # Ops tools
 brew "packer"
 brew "ansible"
 brew "terraform"
 cask "virtualbox"
-brew "boot2docker"
 
 # Security
 cask "little-snitch"
