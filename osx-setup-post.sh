@@ -9,3 +9,6 @@ mackup restore
 gcalcli agenda
 
 npm install -g diff-so-fancy
+
+# Start syncing mail
+brew services start offlineimap

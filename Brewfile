@@ -47,6 +47,7 @@ flash "unity-web-player"
 brew "w3m"
 brew "offlineimap"
 brew "notmuch"
+brew "sqlite"
 
 # Fonts
 tap "caskroom/fonts"
