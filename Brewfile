@@ -42,7 +42,11 @@ cask "emacs"
 cask "firefox"
 cask "flash"
 flash "unity-web-player"
+
+# Mail
 brew "w3m"
+brew "offlineimap"
+brew "notmuch"
 
 # Fonts
 tap "caskroom/fonts"

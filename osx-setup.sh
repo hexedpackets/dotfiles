@@ -112,3 +112,10 @@ boot2docker restart
 echo "$(boot2docker ip) localdocker" | sudo tee -a /etc/hosts
 
 airodump-ng-oui-update
+
+# Mail
+sudo mkdir -p /etc/ssl/certs/
+sudo chmod 755 /etc/ssl/
+sudo chmod 755 /etc/ssl/certs/
+sudo ln -s /usr/local/etc/openssl/cert.pem /etc/ssl/certs/ca-certificates.crt
+pip install git+https://github.com/teythoon/afew.git
