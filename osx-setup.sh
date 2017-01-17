@@ -119,3 +119,4 @@ sudo chmod 755 /etc/ssl/
 sudo chmod 755 /etc/ssl/certs/
 sudo ln -s /usr/local/etc/openssl/cert.pem /etc/ssl/certs/ca-certificates.crt
 pip install git+https://github.com/teythoon/afew.git
+mkdir -p ~/.passwords/imap.gmail.com

@@ -11,4 +11,5 @@ gcalcli agenda
 npm install -g diff-so-fancy
 
 # Start syncing mail
+echo "prime" | gpg -e -r "William Huba" --no-tty --batch > ~/.passwords/prime.gpg
 brew services start offlineimap

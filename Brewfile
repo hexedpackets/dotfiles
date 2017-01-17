@@ -48,6 +48,7 @@ brew "w3m"
 brew "offlineimap"
 brew "notmuch"
 brew "sqlite"
+brew "msmtp"
 
 # Fonts
 tap "caskroom/fonts"

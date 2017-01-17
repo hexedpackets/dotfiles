@@ -10,5 +10,5 @@ To configure this, put the full calendar name (me@gmail.com) in `~/.calendar`.
 
 For email accounts:
 ```bash
- /usr/bin/security add-internet-password -a "bill.huba@gmail.com" -s "imap.gmail.com" -w [PASSWORD]
+ echo [PASSWORD] | gpg -e -r "William Huba" -a >  ~/.passwords/imap.gmail.com/[ADDRESS].gpg
 ```
