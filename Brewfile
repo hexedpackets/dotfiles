@@ -73,3 +73,4 @@ cask "virtualbox"
 # Security
 cask "little-snitch"
 brew "aircrack-ng"
+cask "keybase"
