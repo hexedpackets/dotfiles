@@ -33,6 +33,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 echo "Setting screenshot format to PNG"
 defaults write com.apple.screencapture type -string "png"
 
+echo "Disabling fucking emdashes"
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
 echo "Show hidden files in Finder"
 defaults write com.apple.Finder AppleShowAllFiles -bool true
 echo "Show dotfiles in Finder"
