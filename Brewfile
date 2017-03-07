@@ -42,6 +42,7 @@ cask "emacs"
 cask "firefox"
 cask "flash"
 flash "unity-web-player"
+cask "amethyst"
 
 # Mail
 brew "w3m"
