@@ -76,6 +76,7 @@ brew tap homebrew/dupes
 brew tap caskroom/cask
 brew tap caskroom/versions
 brew tap caskroom/fonts
+brew tap homebrew/php/arcanist
 brew bundle
 
 # Enable accessiblity for dropbox

@@ -56,6 +56,7 @@ brew "rbenv"
 brew "ruby-build"
 brew "go"
 cask "docker"
+brew "arcanist"
 
 # Ops tools
 brew "packer"
