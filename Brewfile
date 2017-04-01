@@ -1,5 +1,5 @@
 # Update OSX basics
-#brew "coreutils"
+brew "coreutils"
 brew "findutils", args: ["with-default-names"]
 brew "bash"
 brew "homebrew/dupes/grep"
@@ -8,7 +8,6 @@ brew "homebrew/dupes/grep"
 brew "moreutils"
 brew "jq"
 brew "ack"
-brew "cheat"
 brew "tmux"
 brew "reattach-to-user-namespace"
 brew "gnupg"
@@ -21,27 +20,21 @@ brew "htop"
 brew "curl"
 brew "git"
 brew "wget"
-brew "homebrew/binary/ngrok2"
 brew "nmap"
-brew "wireshark", args: ["devel"]
+#brew "wireshark", args: ["devel"]
 
 # Cask/Apps
-tap "caskroom/cask"
-brew "brew-cask"
-tap "caskroom/versions"
 cask "google-chrome"
 cask "google-hangouts"
 cask "iterm2"
 cask "dropbox"
 cask "spotify"
-cask "shiftit"
-cask "skype"
 cask "lastpass"
 cask "vlc"
 cask "emacs"
 cask "firefox"
-cask "flash"
-flash "unity-web-player"
+cask "flash-ppapi"
+cask "unity-web-player"
 
 # Mail
 brew "w3m"
@@ -51,7 +44,6 @@ brew "sqlite"
 brew "msmtp"
 
 # Fonts
-tap "caskroom/fonts"
 cask "font-inconsolata"
 
 # Programming
@@ -63,14 +55,15 @@ brew "elixir"
 brew "rbenv"
 brew "ruby-build"
 brew "go"
+cask "docker"
 
 # Ops tools
 brew "packer"
-brew "ansible"
 brew "terraform"
 cask "virtualbox"
 
 # Security
+brew "gnupg2"
 cask "little-snitch"
 brew "aircrack-ng"
 cask "keybase"
