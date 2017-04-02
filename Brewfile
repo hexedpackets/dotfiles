@@ -3,6 +3,7 @@ brew "coreutils"
 brew "findutils", args: ["with-default-names"]
 brew "bash"
 brew "homebrew/dupes/grep"
+cask "flux"
 
 # Utilities
 brew "moreutils"
@@ -70,3 +71,4 @@ brew "aircrack-ng"
 cask "keybase"
 brew "yubikey-personalization"
 cask "yubico-authenticator"
+cask "ivpn"
