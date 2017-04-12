@@ -72,10 +72,15 @@ brew update
 sudo -vn
 # Install brew bundle and run it
 brew tap Homebrew/bundle
+brew tap homebrew/dupes
+brew tap caskroom/cask
+brew tap caskroom/versions
+brew tap caskroom/fonts
+brew tap homebrew/php/arcanist
 brew bundle
 
-# Enable accessiblity permissions
-sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "INSERT INTO access VALUES('kTCCServiceAccessibility','org.shiftitapp.ShiftIt',0,1,1,NULL);"
+# Enable accessiblity for dropbox
+# NOTE: Doesn't work on sierra, there's an extra column needed
 sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "INSERT INTO access VALUES('kTCCServiceAccessibility','com.getdropbox.dropbox',0,1,1,NULL);"
 
 # Ruby
@@ -85,14 +90,9 @@ eval "$(rbenv init -)"
 rbenv global 2.2.2
 gem install bundler
 rbenv rehash
-bundle install --gemfile=ruby/Gemfile
-rbenv rehash
 
 # Python
 pip install -r python/requirements.txt
-
-# OCaml
-opam install -y utop
 
 # Elixir
 mix do local.hex --force, local.rebar --force
@@ -108,12 +108,6 @@ for app in "Activity Monitor" "cfprefsd" "Dock" "Finder" "Safari" "SystemUIServe
 done
 
 git clone https://github.com/monokal/Shellshock ~/repos/Shellshock
-
-boot2docker -m 3072 init && boot2docker up
-boot2docker ssh -t 'echo "DOCKER_TLS=no" | sudo tee /var/lib/boot2docker/profile'
-boot2docker restart
-echo "$(boot2docker ip) localdocker" | sudo tee -a /etc/hosts
-
 airodump-ng-oui-update
 
 # Mail
