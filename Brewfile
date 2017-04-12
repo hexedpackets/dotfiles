@@ -63,6 +63,7 @@ brew "arcanist"
 brew "packer"
 brew "terraform"
 cask "virtualbox"
+cask "google-cloud-sdk"
 
 # Security
 brew "gnupg2"
