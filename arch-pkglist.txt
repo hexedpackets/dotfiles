@@ -1,4 +1,7 @@
 ack
+android-platform
+android-sdk-build-tools
+audacity
 autoconf
 autoconf-archive
 automake
@@ -36,6 +39,7 @@ efitools
 elixir
 emacs
 emerald0.9
+exfat-utils
 fakeroot
 file
 filesystem
@@ -57,6 +61,7 @@ gparted
 graphviz
 grep
 groff
+gthumb
 gzip
 haproxy
 htop
@@ -73,7 +78,6 @@ konsole
 less
 lib32-alsa-plugins
 lib32-curl
-lib32-mesa-libgl
 lib32-mesa-vdpau
 lib32-opencl-catalyst
 libtool
@@ -93,9 +97,9 @@ mcomix
 mdadm
 mercurial
 mesa-demos
-mesa-libgl
 mesa-vdpau
 msmtp
+mupdf
 mylar-git
 nano
 net-tools
@@ -113,11 +117,13 @@ openvpn-update-resolv-conf
 openvpn-update-systemd-resolved
 pacman
 pacmatic
+pass
 patch
 pavucontrol
 pciutils
 pcmciautils
 perl
+php
 pkg-config
 plasma-meta
 plex-media-server
@@ -142,6 +148,7 @@ rsync
 ruby-build
 s-nail
 sabnzbd
+sbt
 scrot
 sed
 shadow
@@ -170,6 +177,7 @@ vim
 virtualbox
 vlc
 w3m
+watchman
 wget
 which
 whois
